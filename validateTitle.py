@@ -8,7 +8,7 @@ from selenium.webdriver.edge.service import Service
 title = "Newgrounds.com — Everything, By Everyone"
 
 # Path to the EdgDriver 
-PATH = r"C:\Program Files (x86)\edgedriver_win64\msedgedriver.exe"
+PATH = r"path\msedgedriver.exe"
 
 # Create a service object
 service = Service(executable_path=PATH)
