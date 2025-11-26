@@ -66,9 +66,9 @@ try:
         if len(users) == 10:
             print("The number of users are: ", len(users))
         else:
-            print("Erro: missing users")
+            print("Error: missing users")
         print()    
-except TimeoutError:
+except TimeoutException:
     print("Timeout")
 
 # Exit the borwser
