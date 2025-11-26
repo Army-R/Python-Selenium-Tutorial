@@ -22,6 +22,8 @@ try:
     topsearch = WebDriverWait(driver, 10).until (
         EC.presence_of_element_located((By.ID, "topsearch_text"))
     )
+    # Ensure the search bar is clear
+    topsearch.clear()
     # Perfom a search
     topsearch.send_keys("Linkin Park")
     time.sleep(1)
