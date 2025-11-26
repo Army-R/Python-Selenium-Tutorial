@@ -11,14 +11,8 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 import time
 
-# Driver path
-PATH = r"C:\Program Files (x86)\edgedriver_win64\msedgedriver.exe"
-
-# Set the service to the path
-service = Service(executable_path=PATH)
-
-# Initialize the webdriver using the service
-driver = webdriver.Edge(service=service)
+# Initialize the webdriver 
+driver = webdriver.Edge()
 
 # Go to the website
 driver.get("https://www.newgrounds.com")
@@ -70,9 +64,9 @@ try:
     for item in itemlist3:
         users = item.find_elements(By.CLASS_NAME, "item-user")
         if len(users) == 10:
-            print("The number of user is: ", len(users))
+            print("The number of users are: ", len(users))
         else:
-            print("Erro: missning users")
+            print("Erro: missing users")
         print()    
 except TimeoutError:
     print("Timeout")
