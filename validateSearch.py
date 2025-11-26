@@ -76,3 +76,6 @@ try:
         print()    
 except TimeoutError:
     print("Timeout")
+
+# Exit the borwser
+driver.quit()
