@@ -1,8 +1,6 @@
 #page.py
 
 # Import necessary modules
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from locator import MainPageLocators
 from element import BasePageElement
 import re
